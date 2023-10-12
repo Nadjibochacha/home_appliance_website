@@ -7,24 +7,48 @@ body{
     font-size:15px ;
     overflow-x: hidden;
 }
-.circle{
+#header .circle{
     width: 30rem;
     height: 30rem;
     border-radius: 30rem;
     background: #D6B45E;
     filter: blur(130px);
     flex-shrink: 0;
+    z-index: -1;
     position: absolute;
     top: -52vh;
     left: 17%;
 }
-.circle:nth-child(2){
+#header .circle:nth-child(2){
     position: absolute;
     top:40vh ;
     left: 60%;
     z-index: -1;
 }
-
+#menu .circle2{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30rem;
+    background: #D6B45E;
+    filter: blur(130px);
+    flex-shrink: 0;
+    z-index: -2;
+    position: absolute;
+    top: 130%;
+    
+}
+#menu .circle3{
+    position: absolute;
+    top:175%;
+    left: 70%;
+    z-index: -2;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 30rem;
+    background: #D6B45E;
+    filter: blur(130px);
+    flex-shrink: 0;
+}
 nav .container li a{
     font-size: 1.2rem;
     margin: 0 5px;
@@ -146,10 +170,11 @@ nav .container .navbar-brand{
     bottom: 35px;
     filter:sepia(0.8)  ;
 }
-.cards .card-title{
+#feedback .cards .card-title{
     text-transform: uppercase;
     font-weight: 700;
     line-height: 30px;
+    color: white;
 }
 .card-brown{
     transform: translateY(15rem);
@@ -262,7 +287,92 @@ nav .container .navbar-brand{
 }
 footer{
     transform: translateY(23rem);
-    font-size: 1.3rem;
-    color: white;
-    background: #8d8c8c20;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: .8rem;
+    letter-spacing: 0.04rem;
+    text-transform: capitalize;
+    background: #C6B99A;
+}
+/* menu page style */
+#menu .menu{
+  border-radius: 0.75rem;
+  background: linear-gradient(180deg, rgba(31, 29, 29, 0.32) 0%, rgba(64, 62, 62, 0.28) 44.17%, rgba(74, 84, 119, 0.46) 100%);
+}
+#menu .txt h1{
+  color: #FFF;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-shadow: 3px 6px 6px rgba(0, 0, 0, 0.538);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 2.6rem; 
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+#menu .txt p{
+  color: #E3DEDE;
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.85rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; 
+  letter-spacing: 0.4rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+#menu .card .info{
+  background-image: url('photos&icons/image\ 1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 1.14rem;
+  border-top-left-radius: 1.14rem;
+}
+#menu .card .info div{
+  text-align: center;
+  color: #d8be7e;
+  font-weight: 400;
+  font-size: 1.27rem;
+  line-height: 1.4rem; 
+  letter-spacing: 0.07rem;
+  text-transform: capitalize;
+  height: 15rem;
+  padding: 3rem 2px;
+  opacity: 0;
+  transition: all ease-out 1.2s;
+}
+#menu .card .info div:hover{
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.33);
+  backdrop-filter: blur(4.5px);
+  border-top-right-radius: 1.14rem;
+  border-top-left-radius: 1.14rem;
+}
+.bg-blue{
+  background: rgba(30, 39, 70, 0.9);
+  color: white;
+  border-bottom-right-radius: 1.14rem;
+  border-bottom-left-radius: 1.14rem;
+}
+.card{
+  border-radius: 1.14rem;
+}
+.card-text span{
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 0.05rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.toorder{
+text-align: center;
+font-size: 2rem;
+font-weight: 400;
+line-height: 2rem;
+letter-spacing: 0.3rem;
+text-transform: capitalize;
 }
